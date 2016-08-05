@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Parcheggio Stazione",
+    "position": "45.620651, 9.216960",
+    "icon": "parking.png"
+  },
+  {
+    "name": "Parcheggio Viale Rimembranze",
+    "position": "45.620693, 9.205253",
+    "icon": "parking.png"
+  },
+  {
+    "name": "Parcheggio Don Giussani, Via Gavazzi",
+    "position": "45.621237, 9.209033",
+    "icon": "parking.png"
+  },
+  {
+    "name": "Parcheggio Borghetto",
+    "position": "45.615073, 9.202363",
+    "icon": "parking.png"
+  },
+ {
+    "name": "Parcheggio Via Milano angolo Caravaggio",
+    "position": "45.604985, 9.203437",
+    "icon": "parking.png"
+  },
+  {
+    "name": "Parcheggio Mercato Sud Prati",
+    "position": "45.614752, 9.211902",
+    "icon": "parking.png"
+  }
+]
