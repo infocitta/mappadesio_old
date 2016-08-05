@@ -33,5 +33,265 @@
     "name": "Parcheggio Via Foscolo",
     "position": "45.613566, 9.204628",
     "icon": "parking.png"
-  }
+  },
+ {
+   "name": "Parcometro Via  Dolci  4",
+   "position": "45.620103, 9.214355",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Bareggi 7",
+   "position": "45.620003, 9.220018",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Bixio 14",
+   "position": "45.619441, 9.220563",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Tittoni 15",
+   "position": "45.621443, 9.219235",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Bareggi 15",
+   "position": "45.619367, 9.220315",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Guarenti  13",
+   "position": "45.619408, 9.21455",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  angolo Forlanini  12",
+   "position": "45.619142, 9.217347",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Forlanini 33",
+   "position": "45.618082, 9.218035",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Tittoni 3",
+   "position": "45.620705, 9.219562",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Bolivia 3",
+   "position": "45.621344, 9.220021",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Filippo da Desio 33",
+   "position": "45.622654, 9.219573",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Buozzi 5a ",
+   "position": "45.620357, 9.216049",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  angolo Filippo da Desio  20",
+   "position": "45.622093, 9.219856",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Buozzi 11",
+   "position": "45.620338, 9.215014",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Sicilia ",
+   "position": "45.618634, 9.219394",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Sicilia 20",
+   "position": "45.619891, 9.219016",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Sicilia 14",
+   "position": "45.619391, 9.219247",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Brambilla  7",
+   "position": "45.619025, 9.216901",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Primule 2",
+   "position": "45.620489, 9.220133",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Stazione ",
+   "position": "45.619673, 9.216492",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Camnasio  5",
+   "position": "45.62042, 9.216803",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Stazione ",
+   "position": "45.620041, 9.21807",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Stazione ",
+   "position": "45.619598, 9.21671",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Stazione ",
+   "position": "45.620041, 9.21807",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Municipio  1",
+   "position": "45.620388  , 9.208536",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Municipio  2",
+   "position": "45.620389, 9.208536",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Rimenbranze  1e2",
+   "position": "45.619408 , 9.206455",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Corso Italia  ",
+   "position": "45.619898 , 9.208117",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Roggia Traversi 8",
+   "position": " 45.618627, 9.208083",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Lombardia 3",
+   "position": " 45.6201  , 9.210802",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  S. Pietro 26",
+   "position": "45.619568  , 9.210093",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Largo 1 e 2 26",
+   "position": "45.616862 , 9.209415",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Olmetto 28",
+   "position": "45.61594 , 9.20775",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Grandi  30",
+   "position": "45.614893 , 9.208446",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Fratelli Cervi 1 14",
+   "position": "45.618316 , 9.205937",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Fr. Cervi 2 6",
+   "position": "45.618486 , 9.206961",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Mons. Cattaneo 23",
+   "position": "45.617508 , 9.205583",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Matteotti 1 15",
+   "position": "45.617172 , 9.205876",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Matteotti 2 28",
+   "position": "45.617353, 9.205834",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Matteotti 3 40",
+   "position": "45.616971 , 9.204994",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Cesare d' Adda  8",
+   "position": "45.616345 , 9.205495",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Tripoli 2 7",
+   "position": "45.616386 , 9.206099",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Foscolo 1 17",
+   "position": "45.613257  , 9.204686",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Foscolo 2 31",
+   "position": "45.613244  , 9.204061",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Italia 1 25",
+   "position": "45.617777 , 9.207372",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Italia 2 43",
+   "position": "45.618095 , 9.207399",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Conciliazione ",
+   "position": "45.61745  , 9.20879",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Conciliazione ",
+   "position": "45.617511, 9.209071",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Garibaldi 1 120",
+   "position": "45.613546, 9.20555",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Garibaldi 2 98",
+   "position": "45.613567  , 9.205556",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Garibaldi 3 82",
+   "position": "45.614988, 9.206248",
+   "icon": "parkingmeter.png"
+ },
+ {
+   "name": "Parcometro Via  Garibaldi 4 6",
+   "position": "45.617011  , 9.206992",
+   "icon": "parkingmeter.png"
+ }  
 ]
