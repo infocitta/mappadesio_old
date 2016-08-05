@@ -16,11 +16,11 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
   });
   $http.get("poi.json")
     .then(function(response) {
-        $scope.cities = response.data;
+        $scope.pois = response.data;
     });	
 
-  $scope.showCity = function(event, city) {
-    $scope.selectedCity = city;
+  $scope.showPOI = function(event, poi) {
+    $scope.selectedPOI = poi;
     $scope.map.showInfoWindow('myInfoWindow', this);
   };
 
@@ -57,16 +57,14 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 
     <info-window id="myInfoWindow" >
       <div ng-non-bindable>
-        <h4>{{selectedCity.Name}}</h4>
+        <h4>{{selectedPOI.name}}</h4>
       </div> 
     </info-window>
 
-    <marker ng-repeat="c in cities" 
-      position="{{c.Latitude}},{{c.Longitude}}" title="{{c.Name}}"  id="{{c.ID}}"  on-click="showCity(event, c)"
+    <marker ng-repeat="p in pois" 
+      position="{{p.position}}" title="{{p.name}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
       icon="{
-        url:'icons/{{c.Category}}.png',
-        scaledSize:[20,20],
-        anchor: [10,10]
+        url:'{{p.icon}}'
       }"
       
       >
@@ -75,35 +73,7 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
   </ng-map>
 </div>
 
-<div class="container">	
-<table class="table table-bordered table-striped">
-    
-    <thead>
-      <tr>
 
-        <td>
-          Categoria
-        </td>
-        <td>
-          Nome 
-        </td>
-      </tr>
-    </thead>
-    
-    <tbody>
-      <tr ng-repeat="c in cities | orderBy:'Name'">
-
-		<td>
-			{{c.Category}}
-		</td>
-        <td>
-			{{c.Name}}
-		</td>
-      </tr>
-    </tbody>
-    
-  </table>	
-</div>
 
   </div>
 </body>
