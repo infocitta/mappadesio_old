@@ -28,5 +28,10 @@
     "name": "Parcheggio Mercato Sud Prati",
     "position": "45.614752, 9.211902",
     "icon": "parking.png"
+  },
+  {
+    "name": "Parcheggio Via Foscolo",
+    "position": "45.613566, 9.204628",
+    "icon": "parking.png"
   }
 ]
