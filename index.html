@@ -60,14 +60,15 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 
     <info-window id="myInfoWindow" >
       <div ng-non-bindable>
-        <h4>{{selectedPOI.name}}</h4>
+        <h4>{{selectedPOI.Name}}</h4>
+        <small>{{selectedPOI.Note}}</small>
       </div> 
     </info-window>
 
     <marker ng-repeat="p in pois" 
-      position="{{p.position}}" title="{{p.name}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
+      position="{{p.Position}}" title="{{p.Name}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
       icon="{
-        url:'{{p.icon}}'
+        url:'{{p.Icon}}'
       }"
       
       >
