@@ -410,17 +410,17 @@
  {
    "Category": "Parcometro",
    "Name": "Parcometro Via  Italia 1 25",
-   "Position": "45.617777,9.207372",
+   "Position": "45.617778, 9.207346",
    "Icon": "parkingmeter.png",
-   "Note": "Posizione non verificata",
+   "Note": "",
    "Link": ""
  },
  {
    "Category": "Parcometro",
    "Name": "Parcometro Via  Italia 2 43",
-   "Position": "45.618095,9.207399",
+   "Position": "45.618164, 9.207484",
    "Icon": "parkingmeter.png",
-   "Note": "Posizione non verificata",
+   "Note": "",
    "Link": ""
  },
  {
