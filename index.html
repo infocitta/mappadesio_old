@@ -54,6 +54,8 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
       <div ng-non-bindable>
         <h4>{{selectedPOI.Name}}</h4>
         <small>{{selectedPOI.Note}}</small>
+	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Posizione</a>
+	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
       </div> 
     </info-window>
 
@@ -67,7 +69,7 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
     </marker>
 	<custom-control id="title" position="TOP_LEFT" index="1">
 	<div style="padding: 10px;">
-	<h3>Città di Desio</h3>
+	<h3><b>Città di Desio</b></h3>
 	<p>Punti di interesse</p>
 	</div>
 	</custom-control>    
