@@ -52,8 +52,8 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 
     <info-window id="myInfoWindow" >
       <div ng-non-bindable>
-        <h4>{{selectedPOI.Name}}</h4>
-        <small>{{selectedPOI.Note}}</small>
+        <div style="padding: 10px;"><h4>{{selectedPOI.Name}}</h4>
+        <small>{{selectedPOI.Note}}</small></div>
 	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Posizione</a>
 	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
       </div> 
