@@ -76,7 +76,13 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
       
       >
     </marker>
-
+	<custom-control id="title" position="TOP_LEFT" index="1">
+		<div style="padding: 10px;"><h4>Desio<h4><small>Punti di Interesse</small></div>
+	</custom-control>    
+	<custom-control id="title" position="BOTTOM_LEFT" index="1">
+		<div style="padding: 10px;">Created by Paolo Fisco @ipersoft</div>
+	</custom-control>  
+    
   </ng-map>
 
 
