@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="ngMap">
 <head>
 <title>Mappa Desio</title>
@@ -30,7 +30,7 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
   NgMap.getMap().then(function(map) {
     $scope.map = map;
   });
-  $http.get("poi.json")
+  $http.get("https://mappadesio.infocitta.info/poi.json")
     .then(function(response) {
         $scope.pois = response.data;
     });	
@@ -48,35 +48,38 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 
 <div ng-controller="MyCtrl as vm">
 
-  <ng-map   map-type-control="false" default-style="false" zoom="14" center="45.618600, 9.207690" >
-
+  <ng-map   map-type-control="false" default-style="false" zoom="16" center="45.618600, 9.207690" >
+	<marker position="current" animation="Animation.BOUNCE" title="Tua posizione" icon="{url:'man.png'}"></marker>
     <info-window id="myInfoWindow" >
       <div ng-non-bindable>
-        <div style="padding: 10px;"><h4>{{selectedPOI.Name}}</h4>
+        <div style="padding: 10px;"><h4>{{selectedPOI.Address}}</h4>
         <small>{{selectedPOI.Note}}</small></div>
 	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Posizione</a>
 	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
       </div> 
     </info-window>
-
-    <marker ng-repeat="p in pois" 
-      position="{{p.Position}}" title="{{p.Name}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
+	<div ng-repeat="c in pois[0].Categories">
+    <marker ng-repeat="p in c.Locations" 
+      position="{{p.Latitude}},{{p.Longitude}}" title="{{p.Address}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
       icon="{
-        url:'{{p.Icon}}'
+        url:'{{c.Icon}}'
       }"
       
       >
     </marker>
+	</div>
 	<custom-control id="title" position="TOP_LEFT" index="1">
 	<div style="padding: 10px;">
 	<h3><b>Città di Desio</b></h3>
 	<p>Punti di interesse</p>
 	</div>
 	</custom-control>    
-	<custom-control id="title" position="BOTTOM_LEFT" index="1">
+	<custom-control id="by" position="BOTTOM_LEFT" index="1">
 		<div style="padding: 10px;">Created by Paolo Fisco @ipersoft</div>
-	</custom-control>  
-    
+	</custom-control> 
+	<custom-control id="by" position="TOP_RIGHT" index="1">
+		<div ng-repeat="c in pois[0].Categories" style="padding: 10px;background-color: white;"><img ng-src="{{c.Icon}}">{{c.Category}}</div>
+	</custom-control> 	
   </ng-map>
 
 
