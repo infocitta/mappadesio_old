@@ -1,6 +1,7 @@
 [
    {
       "Dataset":"Parcheggi",
+      "Visible":"true",
       "Categories":[
          {
             "Category":"Park Meter",
