@@ -78,7 +78,7 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 		<div style="padding: 10px;">Created by Paolo Fisco @ipersoft</div>
 	</custom-control> 
 	<custom-control id="by" position="TOP_RIGHT" index="1">
-		<div ng-repeat="c in pois[0].Categories" style="padding: 10px;background-color: white;"><img ng-src="{{c.Icon}}">{{c.Category}}</div>
+		<div ng-repeat="c in pois[0].Categories" style="padding: 10px;background-color: white;"><img ng-src="{{c.Icon}}" style="width:50%;height:50%">{{c.Category}}</div>
 	</custom-control> 	
   </ng-map>
 
