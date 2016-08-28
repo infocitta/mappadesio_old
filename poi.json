@@ -4,7 +4,7 @@
       "Visible":true,
       "Categories":[
          {
-            "Category":"Park Meter",
+            "Category":"Parchimetro",
             "Icon":"parkingmeter.png",
             "Locations":[
                {
@@ -330,8 +330,8 @@
             ]
          },
          {
-            "Category":"Park Meter ATM",
-            "Icon":"parkingmeteratm.png",
+            "Category":"Parchimetro POS",
+            "Icon":"parkingmeterpos.png",
             "Locations":[
                {
                   "UUID":"098b8723-d145-431a-8d75-8444b9cebcb8",
@@ -432,7 +432,7 @@
             ]
          },
          {
-            "Category":"Parking Lot",
+            "Category":"Parcheggio",
             "Icon":"parking.png",
             "Locations":[
                {
