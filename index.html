@@ -58,7 +58,8 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
 	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
       </div> 
     </info-window>
-	<div ng-repeat="c in pois[0].Categories">
+	<div ng-repeat="cat in pois" ng-if="cat.Visible===true">
+	<div ng-repeat="c in cat.Categories">
     <marker ng-repeat="p in c.Locations" 
       position="{{p.Latitude}},{{p.Longitude}}" title="{{p.Address}}"  id="POI_{{$index}}"  on-click="showPOI(event, p)"
       icon="{
@@ -68,17 +69,29 @@ angular.module('ngMap').controller('MyCtrl', function($scope,$http,NgMap) {
       >
     </marker>
 	</div>
+	</div>
 	<custom-control id="title" position="TOP_LEFT" index="1">
 	<div style="padding: 10px;">
 	<h3><b>Città di Desio</b></h3>
 	<p>Punti di interesse</p>
+	
+	<label ng-repeat="d in pois" style="padding: 5px;background-color: white;">
+	<input 
+	type="checkbox"
+	name="DS_{{$index}}"
+	ng-model="d.Visible"
+	>{{d.Dataset}}
+	</label>	
+	
 	</div>
 	</custom-control>    
 	<custom-control id="by" position="BOTTOM_LEFT" index="1">
 		<div style="padding: 10px;">Created by Paolo Fisco @ipersoft</div>
 	</custom-control> 
 	<custom-control id="by" position="TOP_RIGHT" index="1">
-		<div ng-repeat="c in pois[0].Categories" style="padding: 5px;background-color: white;"><img ng-src="{{c.Icon}}" style="width:16px;height:16px">{{c.Category}}</div>
+	<div ng-repeat="cat in pois" ng-if="cat.Visible===true">
+		<div ng-repeat="c in cat.Categories" style="padding: 5px;background-color: white;"><img ng-src="{{c.Icon}}" style="width:16px;height:16px">{{c.Category}}</div>
+	</div>
 	</custom-control> 	
   </ng-map>
 
