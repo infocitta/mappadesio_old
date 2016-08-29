@@ -34,7 +34,7 @@
     <div ng-repeat="cat in pois" ng-if="cat.Visible===true">
 	<div ng-repeat="c in cat.Categories">
     <marker ng-repeat="p in c.Locations" 
-      position="{{p.Latitude}},{{p.Longitude}}" title="{{p.Address}}"  id="POI_{{$index}}"  on-click="leftOpen(event,p)"
+      position="{{p.Latitude}},{{p.Longitude}}" title="{{p.Address}}"  id="POI_{{$index}}"  on-click="leftOpen(event,p,c)"
       icon="{
         url:'{{c.Icon}}'
       }"
@@ -75,13 +75,22 @@
 		var app = angular.module('angularApplication', ['angular.panels','ngMap']);
 
 		//add panels
-		app.config(['panelsProvider', function (panelsProvider) {
-
-		    panelsProvider
+		app.config(['panelsProvider','$windowProvider', function (panelsProvider,$windowProvider) {
+		var $window = $windowProvider.$get();
+		var sizePanel="";
+		if ($window.innerWidth<400) {
+			sizePanel="80%"
+		}
+		else
+		{
+			sizePanel="400px"
+		}
+		
+			panelsProvider
 		        .add({
 		            id: 'panel',
 		            position: 'left',
-		            size: '80%',
+		            size:sizePanel,
 		            templateUrl: 'https://mappadesio.infocitta.info/panel.html',
 		            controller: 'leftCtrl'
 		        })
@@ -89,7 +98,7 @@
 		}]);
 
 		//default controller
-		app.controller('defaultController', ['$scope', 'panels','NgMap','$http', function ($scope, panels,NgMap,$http) {
+		app.controller('defaultController', ['$scope', 'panels','NgMap','$http','$window', function ($scope, panels,NgMap,$http,$window) {
 
 		NgMap.getMap().then(function(map) {
 			$scope.map = map;
@@ -105,17 +114,17 @@ $http.get("https://mappadesio.infocitta.info/poi.json")
     //$scope.map.showInfoWindow('myInfoWindow', this);
   };		
 		
-			$scope.leftOpen = function (event,poi) {
-				$scope.$broadcast('leftHello',poi);
+			$scope.leftOpen = function (event,poi,cat) {
+				$scope.$broadcast('leftHello',poi,cat);
 			};
 		}]);
 
 		//left panel controller
 		app.controller('leftCtrl', ['$scope', 'panels', function ($scope, panels) {
 
-			$scope.$on('leftHello', function(event, poi) {
+			$scope.$on('leftHello', function(event, poi,cat) {
 				$scope.selectedPOI = poi;
-
+				$scope.selectedCAT = cat;
 				panels.open("panel");
 			});
 	
