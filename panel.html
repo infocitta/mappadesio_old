@@ -5,7 +5,9 @@
 <div class="pane-body">
 	<h4>{{selectedPOI.Address}}</h4>
 	<small>{{selectedPOI.Note}}</small>
-	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Posizione</a>
-	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
+	<div>
+	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-primary btn-md" role="button">Posizione</a>
+	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-primary btn-md" role="button">Indicazioni</a>
+	</div>
 </div> 
 
