@@ -1,10 +1,11 @@
 <div class="pane-head">
-	<button type="button" class="close" data-ng-click="panels.close();">x</button>
+	<button type="button" class="close" data-ng-click="panels.close();">X</button>
 </div>
 
 <div class="pane-body">
-	<div>
-		<h3>Left Panel</h3>
-	</div>
-	<div>ciao</div>
-</div>
+	<h4>{{selectedPOI.Address}}</h4>
+	<small>{{selectedPOI.Note}}</small>
+	<a ng-href="https://www.google.com/maps?q={{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Posizione</a>
+	<a ng-href="https://www.google.com/maps/dir/Current+Location/{{selectedPOI.Latitude}},{{selectedPOI.Longitude}}" class="btn btn-info" role="button">Indicazioni</a>
+</div> 
+
