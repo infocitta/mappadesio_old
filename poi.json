@@ -510,7 +510,15 @@
             "Longitude": 9.215334,
             "Note": "",
             "Link": ""
-          }
+          },
+          {
+            "UUID": "2b9e4f8c-17b1-4042-b84d-d751c416ada7",
+            "Address": "Parco Poste",
+            "Latitude": 45.621542,
+            "Longitude": 9.205994,
+            "Note": "",
+            "Link": ""
+          }          
         ]
       },
       {
