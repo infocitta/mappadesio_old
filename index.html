@@ -29,7 +29,7 @@
 </head>
 
 <body data-ng-controller="defaultController">
-  <ng-map   map-type-control="false" default-style="false" zoom="14" center="45.618600, 9.207690" >
+  <ng-map   map-type-control="true" map-type-control-options="{position:'TOP_CENTER'}"  default-style="false" zoom="14" center="45.618600, 9.207690" >
 	<marker position="current" animation="Animation.BOUNCE" title="Tua posizione" icon="{url:'man.png'}"></marker>
     <div ng-repeat="cat in pois" ng-if="cat.Visible===true">
 	<div ng-repeat="c in cat.Categories">
