@@ -1,11 +1,11 @@
 [
   {
-    "N. PROG. INVENT.": "315",
-    "TIPOLOGIA DI BENE": "PAA2 100 - Beni demaniali",
+    "N_INVENT": "315",
+    "TIPOLOGIA": "PAA2 100 - Beni demaniali",
     "DENOMINAZIONE": "via Togliatti - cimitero nuovo",
     "DESCRIZIONE": "alloggio custode",
     "INDIRIZZO": "Togliatti",
-    "LOCALITA'": "DESIO",
+    "LOCALITA": "DESIO",
     "FG": "52",
     "MAPPALE": "114",
     "SUB": "1",
@@ -78,12 +78,12 @@
     ]
   },
   {
-    "N. PROG. INVENT.": "316",
-    "TIPOLOGIA DI BENE": "PAA2 100 - Beni demaniali",
+    "N_INVENT": "316",
+    "TIPOLOGIA": "PAA2 100 - Beni demaniali",
     "DENOMINAZIONE": "via Togliatti - cimitero nuovo",
     "DESCRIZIONE": "box a servizio del custode",
     "INDIRIZZO": "Togliatti",
-    "LOCALITA'": "DESIO",
+    "LOCALITA": "DESIO",
     "FG": "52",
     "MAPPALE": "114",
     "SUB": "2",
@@ -156,12 +156,12 @@
     ]
   },
   {
-    "N. PROG. INVENT.": "317",
-    "TIPOLOGIA DI BENE": "PAA2 100 - Beni demaniali",
+    "N_INVENT": "317",
+    "TIPOLOGIA": "PAA2 100 - Beni demaniali",
     "DENOMINAZIONE": "via Rimembranze - cimitero",
     "DESCRIZIONE": "alloggio custode",
     "INDIRIZZO": "Rimembranze",
-    "LOCALITA'": "DESIO",
+    "LOCALITA": "DESIO",
     "FG": "23",
     "MAPPALE": "57",
     "SUB": null,
@@ -176,48 +176,48 @@
           "rings": [
             [
               [
-                9.204994748228518,
-                45.62120465458753
+               
+                45.62120465458753, 9.204994748228518
               ],
               [
-                9.205160063504255,
-                45.62124936165104
+                
+                45.62124936165104,9.205160063504255
               ],
               [
-                9.205213024887403,
-                45.62126276704554
+                
+                45.62126276704554,9.205213024887403
               ],
               [
-                9.205211454325509,
-                45.621271770811674
+                
+                45.621271770811674,9.205211454325509
               ],
               [
-                9.205222694534537,
-                45.62127625109282
+                
+                45.62127625109282,9.205222694534537
               ],
               [
-                9.2052275539891,
-                45.62128974378057
+                
+                45.62128974378057,9.2052275539891
               ],
               [
-                9.205281739798075,
-                45.62119963697669
+                
+                45.62119963697669,9.205281739798075
               ],
               [
-                9.20532956114416,
-                45.62112304390275
+               
+                45.62112304390275, 9.20532956114416
               ],
               [
-                9.205364622224103,
-                45.62106447473721
+                
+                45.62106447473721,9.205364622224103
               ],
               [
-                9.205125469274376,
-                45.62099739910774
+                
+                45.62099739910774,9.205125469274376
               ],
               [
-                9.204994748228518,
-                45.62120465458753
+                
+                45.62120465458753,9.204994748228518
               ]
             ]
           ]
@@ -226,12 +226,12 @@
     ]
   },
   {
-    "N. PROG. INVENT.": "318",
-    "TIPOLOGIA DI BENE": "PAA2 100 - Beni demaniali",
+    "N_INVENT": "318",
+    "TIPOLOGIA": "PAA2 100 - Beni demaniali",
     "DENOMINAZIONE": "via Rimembranze - cimitero",
     "DESCRIZIONE": "camera mortuaria e cappella votiva",
     "INDIRIZZO": "Rimembranze",
-    "LOCALITA'": "DESIO",
+    "LOCALITA": "DESIO",
     "FG": "23",
     "MAPPALE": "4",
     "SUB": null,
